@@ -7,7 +7,7 @@ npm config delete https-proxy
 sed -i '/export ALL_PROXY/d' ~/.zshrc
 echo "unset HTTP_PROXY" >> ~/.zshrc
 echo "unset http_proxy" >> ~/.zshrc
-echo "unset ALL_proxy" >> ~/.zshrc
+echo "unset ALL_PROXY" >> ~/.zshrc
 
 # Git
 git config --unset --global http.proxy
