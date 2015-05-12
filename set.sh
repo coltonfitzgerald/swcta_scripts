@@ -8,7 +8,7 @@ npm config set https-proxy $proxy
 
 if [ -f "$HOME/.zshrc" ]; # Check if using oh-my-zsh
 then 
-  echo "export ALL_PROXY=\"http://proxy.ccsd.net\"" >> ~/.zshrc
+  echo "export ALL_PROXY=\"$proxy\"" >> ~/.zshrc
   sed -i '/unset HTTP_PROXY/d' ~/.zshrc
   sed -i '/unset http_proxy/d' ~/.zshrc
   sed -i '/unset ALL_PROXY/d' ~/.zshrc
